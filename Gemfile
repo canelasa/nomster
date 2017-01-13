@@ -10,6 +10,7 @@ gem 'pg'
 # Use Uglifier as compressor for JavaScript assets
 gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'simple_form'
+gem 'devise', '>= 3.2.4'
 gem 'sprockets', '2.11.0'
 gem 'sass-rails'
 gem 'will_paginate', '~> 3.1.1'
