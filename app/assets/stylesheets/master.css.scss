@@ -28,6 +28,7 @@ font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, 
   background:url('/assets/diagmonds.png');
   border-radius: 0;
   box-shadow: 0px 1px 3px #2a2a2a;
+  margin-bottom:0;
 }
 
 .navbar-inverse .navbar-brand {
@@ -67,4 +68,28 @@ blockquote:before {
 }
 blockquote p {
   display: inline;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    height: 550px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-left-width: 100px;
+    border-right-width: 100px;
+}
+
+.carousel-caption {
+    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+    font-size: 60px;
+    text-shadow: rgba(0,0,0,0.95) 2px 2px;
+    background-color: rgba(0,0,0,0.5);
+    width:100%;
+    position:absolute;
+    left:0;
+}
+
+.carousel {
+  box-shadow: 0px 3px 8px #2a2a2a;
+  background:url('/assets/diagmonds.png');
 }
