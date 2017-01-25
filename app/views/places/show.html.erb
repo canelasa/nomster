@@ -84,3 +84,24 @@
     </blockquote>
   </div>
 <% end %>
+
+<!-- <%= simple_form_for @photo, url: place_comments_path(@place) do |f| %> -->
+<%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+  <div class="modal-body">
+    <%= f.input :picture %>
+    <%= f.input :caption %>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <%= f.submit "Add an image", class: 'btn btn-primary' %>
+  </div>
+<% end %>
+
+<h1> Images </h1>
+<% @place.photos.each do |photo| %>
+  <div>
+    <% image_tag photo.picture %>
+    <% photo.caption %>
+  </div>
+<% end %>
+<% end %>
