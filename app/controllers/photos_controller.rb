@@ -7,6 +7,12 @@ class PhotosController < ApplicationController
     redirect_to place_path(@place)
   end
 
+  def destroy
+    @place = Place.find(params[:place_id])
+    @photo = @place.photos.find(params[:id])
+    @photo.destroy
+    redirect_to place_path(@place), :notice => "picture Deleted"
+  end
 private
 
   def photo_params
