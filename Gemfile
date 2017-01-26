@@ -18,6 +18,7 @@ gem 'bootstrap-will_paginate'
 gem "geocoder", "1.3.4"
 gem "figaro", ">= 1.0.0"
 gem 'carrierwave', '~> 1.0'
+gem "fog"
 
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
