@@ -8,4 +8,8 @@ class Place < ActiveRecord::Base
   validates :name, presence: true, length: { maximum: 140, minimum: 3 }
   validates :address, presence: true, length: { maximum: 140, minimum: 3 }
   validates :description, presence: true, length: { maximum: 140, minimum: 3 }
+
+  def self.search(query)
+    where("lower(address) LIKE ?", "%#{query.downcase}%")
+  end
 end
